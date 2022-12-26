@@ -21,6 +21,8 @@ public class SimpleEventConsume {
     @POST
     public Response consume(@Context HttpHeaders httpHeaders,
             String cloudEventJSON) {
+        logger.info("======New Message Received!!======");
+
         logger.info("ce-id=" + httpHeaders.getHeaderString("ce-id"));
         logger.info(
                 "ce-source=" + httpHeaders.getHeaderString("ce-source"));
@@ -35,8 +37,11 @@ public class SimpleEventConsume {
 
         logger.info("POST:" + cloudEventJSON);
 
+        logger.info("======Message Consumed======");
+
         return Response.status(Response.Status.OK).entity("{\"Consume Completed!!}")
                 .build();
+
     }
 
     @GET
