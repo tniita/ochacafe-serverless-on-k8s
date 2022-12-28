@@ -9,7 +9,7 @@ spec:
       name: simple-serving-ocha-demo-v2
     spec:
       containers:
-      - image: nrt.ocir.io/orasejapan/ocha-demo-sonk8s:v2
+      - image: nrt.ocir.io/orasejapan/ocha-demo-sonk8s-serving:v2
         ports:
         - containerPort: 8080
 

@@ -12,7 +12,7 @@ spec:
       name: simple-serving-ocha-demo-v3
     spec:
       containers:
-      - image: nrt.ocir.io/orasejapan/ocha-demo-sonk8s:v3
+      - image: nrt.ocir.io/orasejapan/ocha-demo-sonk8s-serving:v3
         ports:
         - containerPort: 8080
   traffic:

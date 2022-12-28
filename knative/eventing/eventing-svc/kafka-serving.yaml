@@ -9,6 +9,7 @@ spec:
       name: simple-eventing-ocha-demo-v1
     spec:
       containers:
-      - image: nrt.ocir.io/orasejapan/ocha-demo-sonk8s-eventing
+      - image: nrt.ocir.io/orasejapan/ocha-demo-sonk8s-eventing:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080

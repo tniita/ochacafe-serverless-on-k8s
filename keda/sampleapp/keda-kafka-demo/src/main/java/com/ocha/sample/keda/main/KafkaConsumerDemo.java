@@ -13,10 +13,8 @@ public class KafkaConsumerDemo {
 
     @Incoming("keda-demo")
     public void consume(String payload) {
-        logger.info("======New Message Received!!======");
-
-        logger.info("message received!! " + payload);
-
-        logger.info("======Message Consumed======");
+        logger.info("=======New Message Received!!=======");
+        logger.info("message: " + payload);
+        logger.info("=======Message Consumed!!=======");
     }
 }
