@@ -34,7 +34,7 @@
 
 #### 3-1. Knative Servingのインストール
 
-[こちら](https://knative.dev/docs/install/yaml-install/serving/install-serving-with-yaml/)に従って実施してください。
+[こちら](https://knative.dev/docs/install/yaml-install/serving/install-serving-with-yaml/)に従って実施してください。  
 なお、`Install a networking layer`では`Kourier`、`Configure DNS`では`Magic DNS (sslip.io)`を選択してください。  
 `Install optional Serving extensions`は実施不要です。  
 
@@ -308,10 +308,10 @@ kubectl create secret -n default generic streaming-source-secret \
 
 key|value
 ---|---
-user|[Streamingのプロビジョニング](#3-3-streamingのプロビジョニング)で記録したユーザ名
+user|[3-3.Streamingのプロビジョニング](#3-3-streamingのプロビジョニング)で記録したユーザ名
 password|[3-4-認証トークンの作成](#3-4-認証トークンの作成)で生成した認証トークン
 
-次に、Eventingのイベントソース(今回はKafka(OCI Streaming))を構築します。 
+次に、Eventingのイベントソース(今回はKafka(OCI Streaming))を構築します。  
 ※東京リージョン以外で実施する場合、このManifestに記載されているブートストラップサーバを変更してください
 
 ```sh
@@ -352,7 +352,7 @@ PodをWatchしておきます。
 kubectl get pods -n eventing-demo -w
 ```
 
-OCIコンソールを開き、[Streamingのプロビジョニング](#3-3-streamingのプロビジョニング)で表示したStreamingの一覧を開きます。  
+OCIコンソールを開き、[3-3.Streamingのプロビジョニング](#3-3-streamingのプロビジョニング)で表示したStreamingの一覧を開きます。  
 
 `EventingDemo`をクリックします。  
 
@@ -443,7 +443,7 @@ data:
 
 key|value
 ---|---
-user|[Streamingのプロビジョニング](#3-3-streamingのプロビジョニング)で記録したユーザ名をBase64エンコードした値
+user|[3-3.Streamingのプロビジョニング](#3-3-streamingのプロビジョニング)で記録したユーザ名をBase64エンコードした値
 password|[3-4-認証トークンの作成](#3-4-認証トークンの作成)で生成した認証トークンをBase64エンコードした値
 
 例えば、以下のようになります。  
@@ -500,7 +500,7 @@ PodをWatchしておきます。
 kubectl get pods -n keda-demo -w
 ```
 
-OCIコンソールを開き、[Streamingのプロビジョニング](#3-3-streamingのプロビジョニング)で表示したStreamingの一覧を開きます。  
+OCIコンソールを開き、[3-3.Streamingのプロビジョニング](#3-3-streamingのプロビジョニング)で表示したStreamingの一覧を開きます。  
 
 `KEDA-Demo`をクリックします。  
 
