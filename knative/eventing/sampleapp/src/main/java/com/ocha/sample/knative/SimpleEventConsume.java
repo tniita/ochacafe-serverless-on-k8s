@@ -29,8 +29,6 @@ public class SimpleEventConsume {
                                 + httpHeaders.getHeaderString("ce-specversion"));
                 logger.info("ce-time=" + httpHeaders.getHeaderString("ce-time"));
                 logger.info("ce-type=" + httpHeaders.getHeaderString("ce-type"));
-                logger.info(
-                                "content-type=" + httpHeaders.getHeaderString("content-type"));
                 logger.info("content-length="
                                 + httpHeaders.getHeaderString("content-length"));
 

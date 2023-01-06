@@ -6,9 +6,6 @@ metadata:
 spec:
   template:
     metadata:
-      annotations:
-        autoscaling.knative.dev/target: "1"
-        autoscaling.knative.dev/metric: "rps"
       name: simple-serving-ocha-demo-v3
     spec:
       containers:
